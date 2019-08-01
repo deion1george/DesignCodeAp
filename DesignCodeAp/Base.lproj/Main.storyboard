@@ -274,24 +274,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <imageView key="tableFooterView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Article Screen" id="jKd-9N-Av8">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1503"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <gestureRecognizers/>
-                            <connections>
-                                <outletCollection property="gestureRecognizers" destination="zgg-6Z-W55" appends="YES" id="pNE-Ts-G9e"/>
-                            </connections>
                         </imageView>
                         <connections>
                             <outlet property="dataSource" destination="0NZ-qS-A6n" id="8CS-CA-bdP"/>
                             <outlet property="delegate" destination="0NZ-qS-A6n" id="aey-fd-htf"/>
+                            <outletCollection property="gestureRecognizers" destination="URx-mB-T13" appends="YES" id="arN-02-5xj"/>
                         </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XyF-Bn-HrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="zgg-6Z-W55">
+                <tapGestureRecognizer id="URx-mB-T13">
                     <connections>
-                        <segue destination="8HY-9h-UB8" kind="presentation" modalTransitionStyle="crossDissolve" id="2I5-Ze-Zik"/>
+                        <segue destination="8HY-9h-UB8" kind="presentation" modalTransitionStyle="crossDissolve" id="oPq-em-qtc"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -310,7 +309,7 @@
         <segue reference="Bw0-DZ-VNo"/>
         <segue reference="cEr-Em-WYv"/>
         <segue reference="n8P-Ii-dTN"/>
-        <segue reference="2I5-Ze-Zik"/>
+        <segue reference="oPq-em-qtc"/>
         <segue reference="nKO-ZL-TBj"/>
     </inferredMetricsTieBreakers>
 </document>
