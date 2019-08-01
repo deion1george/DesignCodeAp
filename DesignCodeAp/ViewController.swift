@@ -12,9 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // change to commit
-        //Another test commit
-        //final update
+       
     }
 
 
